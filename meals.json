@@ -1,0 +1,53 @@
+{
+  "flowers": [
+    {
+      "name": "Роза",
+      "color": "Красный",
+      "season": "Лето",
+      "img": "https://i4.storeland.net/3/465/204643779/075a3e/buket-quot-nezhnyj-sharm-quot.jpg",
+      "price": 41500
+    },
+    {
+      "name": "гортензия",
+      "color": "Разноцветный",
+      "season": "Весна",
+      "img": "https://rococo.flowers/wp-content/uploads/2020/06/mistik-1-768x1024.webp",
+      "price": 34800
+    },
+    {
+      "name": "пионовидных роз",
+      "color": "Белый",
+      "season": "Лето",
+      "img": "https://cvety-vanilla.ru/upload/resize_cache/webp/iblock/da4/j7dbsfrm2740dn8mdtff5l8hr4uld8hf.webp",
+      "price": 52000
+    },
+    {
+      "name": "Нежный букет",
+      "color": "Фиолетовый",
+      "season": "Круглый год",
+      "img": "https://maki-nsk.ru/wp-content/uploads/2024/10/img_8775-768x1024.jpg",
+      "price": 73500
+    },
+    {
+      "name": "Пион",
+      "color": "Розовый",
+      "season": "Весна",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpfZ9UseNHPYiG66wMLfL35Pv7TU83vFwgJyk6LHIp4NK8CaTM8nhAaDm63OzgXc7bLpI&usqp=CAU",
+      "price": 62500
+    },
+    {
+      "name": "ярко-розовых кустовых роз",
+      "color": "Оранжевый",
+      "season": "Осень",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCxfl12SR4ccNYT7O-aD5P1OsvW0sOwWIjM5jBBq9BgMMCmcRp-PVo4TxlnLy4bmXRsWg&usqp=CAU",
+      "price": 211200
+    },
+    {
+      "name": "пионовидные одноголовые розы",
+      "color": "Разноцветный",
+      "season": "Круглый год",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1gJbovxOLQ6jH36qv5aP7mVwIvfKjQzH-sryjVE3nhr98wyONsZ09XDENoX1o_Nbsm3Y&usqp=CAU",
+      "price": 41000
+    }
+  ]
+}

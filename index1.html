@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гүлдер дүкені - Төлем</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      .container {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+      button {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #e65c00;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Гүлдер дүкені</h2>
+      <p>
+        Таңдаған гүліңізді сатып алу үшін төмендегі мәліметтерді толтырыңыз.
+      </p>
+
+      <label for="name">Атыңыз:</label>
+      <input type="text" id="name" placeholder="Атыңызды енгізіңіз" required />
+
+      <label for="phone">Телефон нөмірі:</label>
+      <input type="tel" id="phone" placeholder="8XXXXXXXXXX" required />
+
+      <label for="address">Жеткізу мекенжайы:</label>
+      <input
+        type="text"
+        id="address"
+        placeholder="Қала, көше, үй нөмірі"
+        required
+      />
+
+      <label for="amount">Соманы енгізіңіз (₸):</label>
+      <input type="number" id="amount" placeholder="5000" required />
+
+      <button onclick="payWithKaspi()">Kaspi арқылы төлеу</button>
+    </div>
+
+    <script>
+      function payWithKaspi() {
+        let name = document.getElementById("name").value;
+        let phone = document.getElementById("phone").value;
+        let address = document.getElementById("address").value;
+        let amount = document.getElementById("amount").value;
+
+        if (!name || !phone || !address || !amount || amount <= 0) {
+          alert("Барлық мәліметтерді дұрыс толтырыңыз!");
+          return;
+        }
+
+        // Kaspi төлем сілтемесі
+        let kaspiPaymentLink = `https://kaspi.kz/pay/somepaymentlink?amount=${amount}`;
+
+        // Төлем бетіне бағыттау
+        window.location.href = kaspiPaymentLink;
+      }
+    </script>
+  </body>
+</html>
